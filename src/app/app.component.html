@@ -1,0 +1,33 @@
+
+<style>
+
+  ul{
+
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+    cursor: pointer;
+  }
+</style>
+<main class="main">
+<ul>
+  <li routerLink="/home"  >Home</li>
+  <li routerLink='/about' >About</li>  
+  <li routerLink="/contect">Contect</li>
+  <li routerLink="/shop" >shop</li>
+  <a routerLink="login">LoginNow</a>
+</ul>
+
+</main>
+
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<router-outlet />

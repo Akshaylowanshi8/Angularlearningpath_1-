@@ -1,0 +1,9 @@
+
+<p>shop works!</p>
+<form [formGroup]="loginform" (ngSubmit)="onSubmit()">
+FullName :<input type="text" name="username" formControlName ="username" required><br> 
+Email id :<input type="email" formControlName="email" required ><br>
+Password :<input type="password" formControlName="pass" minlength="5" required ><br>
+Enter Age :<input type="number" formControlName="age" required ><br>
+<button type="submit" [disabled]="!loginform.valid">submit</button>
+</form>
