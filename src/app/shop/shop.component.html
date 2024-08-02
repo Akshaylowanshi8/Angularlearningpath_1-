@@ -1,9 +1,13 @@
 
-<p>shop works!</p>
-<form [formGroup]="loginform" (ngSubmit)="onSubmit()">
-FullName :<input type="text" name="username" formControlName ="username" required><br> 
-Email id :<input type="email" formControlName="email" required ><br>
-Password :<input type="password" formControlName="pass" minlength="5" required ><br>
-Enter Age :<input type="number" formControlName="age" required ><br>
+<h1 class="text-5xl">exampal of reactive form  </h1>
+
+<div class="flex justify-center h-56  "  >
+<form [formGroup]="loginform" (ngSubmit)="onSubmit() " class="w-40">
+FullName :<input   class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"  type="text" name="username" formControlName ="username" required><br> 
+Email id :<input   class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"  type="email" formControlName="email" required ><br>
+Password :<input   class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"  type="password" formControlName="pass" minlength="5" required ><br>
+Enter Age :<input  class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"  type="number" formControlName="age" required ><br>
 <button type="submit" [disabled]="!loginform.valid">submit</button>
 </form>
+
+</div>
